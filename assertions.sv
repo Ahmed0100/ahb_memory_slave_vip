@@ -1,5 +1,5 @@
 import definesPkg::*;
-module monitor(AHBSlaveInterface ahb_slave_interface, input reset);
+module monitor(ahb_interface ahb_slave_interface, input reset);
 
 `define NUM_OF_SLAVES 2
 int error_check_pass,error_check_fail;
