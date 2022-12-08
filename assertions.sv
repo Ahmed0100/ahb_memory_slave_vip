@@ -6,18 +6,18 @@ int error_check_pass,error_check_fail;
 int read_only_error_check_pass,read_only_error_check_fail;
 int basic_write_error_check_pass,basic_error_check_fail;
 int basic_read_error_check_pass,basic_error_check_fail;
-int basic_burst_write_error_check_pass,basic_burst_write_error_check_fail;
-int basic_burst_read_error_check_pass, basic_burst_read_error_check_fail;
+int basic_burst_write_check_pass,basic_burst_write_check_fail;
+int basic_burst_read_check_pass, basic_burst_read_check_fail;
 
 int seq_check_pass,seq_check_fail;
 int HREADY_check_pass,HREADY_check_fail;
 int idle_check_pass,idle_check_fail;
 int wait_check_pass,wait_check_fail;
-int burst_count_4_check_pass,burst_count_4_check_fail;
+int bursts_count_4_check_pass,bursts_count_4_check_fail;
 
-int burst_count_8_check_pass,burst_count_8_check_fail;
-int burst_count_16_check_pass,burst_count_16_check_fail;
-int burst_count_single_check_pass,burst_count_single_check_fail;
+int bursts_count_8_check_pass,bursts_count_8_check_fail;
+int bursts_count_16_check_pass,bursts_count_16_check_fail;
+int bursts_count_single_check_pass,bursts_count_single_check_fail;
 
 int addr_change_4_check_pass,addr_change_4_check_fail;
 int addr_change_8_check_pass,addr_change_8_check_fail;
@@ -191,7 +191,7 @@ addr_change_16_check_fail++;
 
 
 
-//SCorebard for Assertions.
+//scorebard for Assertions.
 final
 begin
 $display( "------------------------------------------------------------------------------------------------------");
