@@ -1,8 +1,8 @@
 `define NUM_OF_SLAVES 2
 
-module ahb_slave_top(AHBSlaveInterface ahb_slave_interface, input wait_slave_to_master);
+module ahb_slave_memory_top(AHBSlaveInterface ahb_slave_interface, input wait_slave_to_master);
 
-parameter ADDR_BUS_WIDTH 32;
+parameter ADDR_BUS_WIDTH = 32;
 parameter ADDR_SPACE = 10;
 
 logic [`NUM_OF_SLAVES-1:0] HSEL;
